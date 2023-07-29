@@ -1,0 +1,229 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #19283f;
+  --color: #eff7fa;
+  --green: #33d1cc;
+  --red: #ff3150;
+  --yellow: #ffc400;
+}
+
+.navbar {
+  background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--green);
+}
+
+.search {
+  border-left: 1px solid var(--green);
+}
+
+.search i {
+  color: var(--green);
+  cursor: pointer;
+}
+
+.navbar-toggler i {
+  color: white;
+}
+
+.navbar .navbar-toggler {
+  border: 2.4px solid white;
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green);
+}
+
+
+.main-btn {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 8px 16px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+.container2 {
+  background-color: var(--dark);
+  height: 83vh;
+}
+
+.head::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feat .icon {
+  height: 200px;
+}
+
+.feat .icon i {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feat .icon .num {
+  font-size: 12rem;
+  color: var(--color);
+}
+
+.feat .icon .pencil {
+  color: var(--green);
+}
+
+.icons h3 {
+  color: var(--yellow);
+}
+
+.app {
+  background-color: var(--color);
+}
+
+.app ul .active {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+.app ul .active:hover {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+
+.app ul li {
+  color: black;
+  margin: 0 11px;
+}
+
+.app ul li:hover {
+  color: var(--red);
+  cursor: pointer;
+}
+
+.app .card {
+  padding: 5px;
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.app .card::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    transition: 0.3s;
+    height: calc(100% - 10px);
+    transform: translateX(calc(-100% - 5px));
+    background-color: rgb(51 209 204 / 76%);
+}
+
+.app .card:hover::before {
+    transform: translateX(0);
+}
+
+.team {
+    background-color: var(--color);
+}
+
+.team .card {
+    border: none;
+    border-radius: 0;
+}
+
+.team h2 {
+    color: var(--yellow);
+}
+
+.team .card h4 {
+    background-color: var(--green);
+    height: 58px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pro {
+    background-color: var(--dark);
+}
+
+.blog span,h5 {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.blog .card {
+    border-radius: 0;
+}
+
+.sub {
+    background-color: var(--yellow);
+}
+
+.sub input[type="text"] {
+    border: none;
+    background-color: var(--yellow);
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+.sub input[type="submit"] {
+    background-color: var(--dark);
+    border: none;
+    padding: 7px 14px;
+    outline: none;
+    color: var(--yellow);
+}
+
+.sub ::placeholder {
+    color: white;
+}
+
+.footer {
+    background-color: var(--dark);
+}
+
+.copyright span {
+    color: var(--green);
+}
+
+.copyright .two {
+    color: var(--yellow);
+}
+
